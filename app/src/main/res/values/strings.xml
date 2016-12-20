@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">osm2vectortiles-android</string>
+    <string name="access_token">YOUR_TOKEN_GOES_HERE</string>
+</resources>

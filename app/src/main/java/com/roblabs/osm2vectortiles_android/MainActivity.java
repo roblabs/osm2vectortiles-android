@@ -5,6 +5,7 @@ import android.os.Bundle;
 
 import com.mapbox.mapboxsdk.maps.MapView;
 import com.mapbox.mapboxsdk.maps.MapboxMap;
+import com.mapbox.mapboxsdk.constants.Style;
 import com.mapbox.mapboxsdk.maps.OnMapReadyCallback;
 import com.mapbox.mapboxsdk.MapboxAccountManager;
 
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
             public void onMapReady(MapboxMap mapboxMap) {
 
                 // Customize map with markers, polylines, etc.
+                mapboxMap.setStyleUrl(Style.LIGHT);
 
             }
         });

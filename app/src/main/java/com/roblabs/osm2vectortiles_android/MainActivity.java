@@ -31,7 +31,8 @@ public class MainActivity extends AppCompatActivity {
                 // Customize map with markers, polylines, etc.
 
                 // Local Style JSON in the Android `assets` folder
-                mapboxMap.setStyleUrl("asset://mapbox-raster-v8.json");
+//                mapboxMap.setStyleUrl("asset://mapbox-raster-v8.json");
+                 mapboxMap.setStyleUrl("asset://styles/geography-class-local.json");
 
                 // Style JSON hosted on a server
 //                mapboxMap.setStyleUrl("https://www.mapbox.com/android-sdk/files/mapbox-raster-v8.json");

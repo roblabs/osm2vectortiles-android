@@ -1,6 +1,10 @@
 # osm2vectortiles-android
 Working example of osm2vectortiles for android
 
+Please see the Android app on the [Google Play Store](https://play.google.com/store/apps/details?id=com.roblabs.osm2vectortiles_android).
+
+![[Geography Class](https://play.google.com/store/apps/details?id=com.roblabs.osm2vectortiles_android)](0.0.0.png)
+
 Building upon https://github.com/klokantech/osm2vectortiles-ios, now an Android app can be built with local osm2vectortiles, styles, glyphs and sprites.
 
 Features

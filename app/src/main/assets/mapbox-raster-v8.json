@@ -1,0 +1,17 @@
+{
+  "version": 8,
+  "sources": {
+    "simple-tiles": {
+      "type": "raster",
+      "url": "mapbox://mapbox.streets",
+      "tileSize": 256
+    }
+  },
+  "layers": [
+    {
+      "id": "simple-tiles",
+      "type": "raster",
+      "source": "simple-tiles"
+    }
+  ]
+}

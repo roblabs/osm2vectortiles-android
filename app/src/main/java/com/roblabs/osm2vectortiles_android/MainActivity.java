@@ -1,13 +1,13 @@
 package com.roblabs.osm2vectortiles_android;
 
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.mapbox.mapboxsdk.maps.MapView;
 import com.mapbox.mapboxsdk.maps.MapboxMap;
-import com.mapbox.mapboxsdk.constants.Style;
+import com.mapbox.mapboxsdk.maps.Style;
 import com.mapbox.mapboxsdk.maps.OnMapReadyCallback;
-import com.mapbox.mapboxsdk.MapboxAccountManager;
+import com.mapbox.mapboxsdk.Mapbox;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        MapboxAccountManager.start(this, getString(R.string.access_token));
+        Mapbox.getInstance(this, getString(R.string.access_token));
         setContentView(R.layout.activity_main);
 
         // Create a mapView
@@ -31,8 +31,9 @@ public class MainActivity extends AppCompatActivity {
                 // Customize map with markers, polylines, etc.
 
                 // Local Style JSON in the Android `assets` folder
-//                mapboxMap.setStyleUrl("asset://mapbox-raster-v8.json");
-                 mapboxMap.setStyleUrl("asset://styles/geography-class-local.json");
+                //recent change requires new way to build a custom style, URI allows for more types
+//                mapboxMap.setStyle(new Style.Builder().fromUri(("asset://mapbox-raster-v8.json"));
+                 mapboxMap.setStyle(new Style.Builder().fromUri("asset://styles/geography-class-local.json"));
 
                 // Style JSON hosted on a server
 //                mapboxMap.setStyleUrl("https://www.mapbox.com/android-sdk/files/mapbox-raster-v8.json");

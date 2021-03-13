@@ -31,7 +31,5 @@ dependencies {
     implementation "com.android.support:appcompat-v7:${supportLibVersion}"
 
     // add the Mapbox SDK dependency below
-    compile ('com.mapbox.mapboxsdk:mapbox-android-sdk:9.2.1@aar'){
-        transitive=true
-    }
+    implementation ('com.mapbox.mapboxsdk:mapbox-android-sdk:9.4.0@aar')
 }

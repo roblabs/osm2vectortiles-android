@@ -30,6 +30,6 @@ dependencies {
     })
     implementation "com.android.support:appcompat-v7:${supportLibVersion}"
 
-    // add the Mapbox SDK dependency below
-    implementation ('com.mapbox.mapboxsdk:mapbox-android-sdk:9.4.0@aar')
+    // add the MapLibre SDK dependency below
+    implementation 'org.maplibre.gl:android-sdk:9.4.0'
 }
